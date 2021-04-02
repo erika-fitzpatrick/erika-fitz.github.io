@@ -11,6 +11,12 @@ body,h4,h5 {font-family: "Raleway", sans-serif}
 h1,h2,h3,span {font-family: "Satisfy", sans-serif}
 dd {margin-top: 4px}
 dt {margin-left: 10px; margin-top: 10px}
+a:hover {
+  color: #06a5ba;
+}
+.imageLink:hover {
+  background-color: #06a5ba;
+}
 .w3-button {background-color: "transparent"}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
@@ -92,10 +98,10 @@ header,nav,footer {background-image: url("assets/whitewood.jpeg")}
 
 
   <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0">
-    <span class="w3-button w3-black w3-xlarge w3-display-topcenter" onclick="modal01.style.display='none'">&lt;- return to the shelf</span>
+  <div id="modal01" class="w3-modal w3-light-grey" style="padding-top:0">
+    <span class="w3-button w3-light-grey w3-xlarge w3-display-topcenter" onclick="modal01.style.display='none'"><h3 class="bluefont">&lt;- return to the shelf</h3></span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-32">
-      <a id="bookLink" class="w3-col l6" target="_blank" style="padding-bottom:20px;"><img id="img01" class="w3-image"></a>
+      <a id="bookLink" class="w3-col l6 imageLink" target="_blank" style="padding:10px;margin-bottom:10px;margin-right:10px;margin-left:10px;"><img id="img01" class="w3-image"></a>
       <p id="caption" style="text-align:left; margin-top:0;"></p>
     </div>
   </div>
