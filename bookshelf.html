@@ -6,10 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New+Tegomin">
 <style>
 body,h4,h5 {font-family: "Raleway", sans-serif}
 h1,h2,h3,span {font-family: "Satisfy", sans-serif}
+dd {margin-top: 4px}
+dt {margin-left: 10px; margin-top: 10px}
 .w3-button {background-color: "transparent"}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
@@ -57,10 +58,21 @@ header,nav,footer {background-image: url("assets/whitewood.jpeg")}
     </div>
 
     <div class="w3-third">
-      <img src="assets/howtochangeeverything.jpeg" style="width:100%" onclick="onClick(this)"
-        alt="<a target='_blank' href='https://www.google.com/'><i>How to Change Everything: A Young Human's Guide to Protecting the Planet and Each Other</i> by Naomi Klein</a>
-        </br> review goes here
-        </br> We Rise: The Earth Guardians Guide to Building a Movement That Restores the Planet">
+      <img src="assets/howtochangeeverything.jpeg" style="width:100%" title="https://www.youtube.com/watch?v=Hq3Gbu6XjlQ" onclick="onClick(this)"
+        alt="<h4 style='text-align:center; margin-top:0;'><i>How to Change Everything: A Young Human's Guide to Protecting the Planet and Each Other</i></h4>
+        <h5 style='text-align:center'>by Naomi Klein with Rebecca Stefoff
+        </br>(2021, Atheneum Books for Young Readers)</h5>
+        review goes here
+      </br></br><h5>If you like this book, check out these titles as well:</h5>
+         <dl>
+           <dt><a href='https://www.youtube.com/watch?v=leqWuYOv2Cw' target='_blank'><i>We Rise: The Earth Guardians Guide to Building a Movement That Restores the Planet </i>by Xiuhtezcatl Martinez</a> (2017, Rodale Books)</dt>
+           <dd>In this book, teen environmental activist and hip-hop artist Xiuhtezcatl Martinez offers practical solutions for teens interested in getting involved in climate change activism.</dd>
+           <dt><a href='https://books.google.com/books/about/Oak_Flat.html?id=oCikDwAAQBAJ&printsec=frontcover&source=kp_read_button&newbks=1&newbks_redir=1' target='_blank'><i>Oak Flat: A Fight for Sacred Land in the American West </i>by Lauren Redniss</a> (2020, Random House)</dt>
+           <dd><i>Oak Flat </i></a>ties together art and prose to bring to life the true story of two Apache families' ongoing efforts to protect sacred lands, water, and endangered flora and fauna from mining.</dd>
+           <dt><a href='https://www.youtube.com/watch?v=KGA2iiJCfb0' target='_blank'><i>One Earth: People of Color Protecting Our Planet </i>by Anuradha Rao</a> (2020, Orca Book)</dt>
+           <dd>This book shines the light on the contributions of people of color to the climate change movement through the stories of 20 young people doing impactful work to restore and protect the environment </dd>
+         </dl>">
+
       <img src="assets/glimmerofhope.jpg" style="width:100%" onclick="onClick(this)"
         alt="<a target='_blank' href='https://www.google.com/'><i>Glimmer of Hope: How Tragedy Sparked a Movement</i> by The March for Our Lives founders</a>
         </br> review goes here">
@@ -82,9 +94,9 @@ header,nav,footer {background-image: url("assets/whitewood.jpeg")}
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0">
     <span class="w3-button w3-black w3-xlarge w3-display-topcenter" onclick="modal01.style.display='none'">&lt;- return to the shelf</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-32">
+      <a id="bookLink" class="w3-col l6" target="_blank" style="padding-bottom:20px;"><img id="img01" class="w3-image"></a>
+      <p id="caption" style="text-align:left; margin-top:0;"></p>
     </div>
   </div>
 
@@ -104,29 +116,6 @@ header,nav,footer {background-image: url("assets/whitewood.jpeg")}
     </div>
   </div>
 
-  <!-- Contact section
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px">
-      <h4 class="w3-center"><b>Contact Me</b></h4>
-      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-      </form>
-    </div>
-  </div>-->
-
   <!-- Footer -->
   <footer class="w3-container w3-padding-8 w3-grey">
     <div class="w3-row-padding w3-center">
@@ -134,7 +123,6 @@ header,nav,footer {background-image: url("assets/whitewood.jpeg")}
     </div>
   </footer>
 
-  <!--div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div-->
 
 <!-- End page content -->
 </div>
@@ -154,6 +142,8 @@ function w3_close() {
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
+  var bookURL = document.getElementById("bookLink");
+  bookURL.href = element.title;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
